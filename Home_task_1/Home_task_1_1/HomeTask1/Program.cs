@@ -6,16 +6,22 @@ internal class Program
     {
         Console.WriteLine("Press ENTER to continue!\n");
         //TEST 1 Defolt value
-        SnakeMatrixTask1_1.Array();
-        Console.WriteLine("-------------------");
+        Console.WriteLine("----------clockwise---------");
+        SnakeMatrixTask1_1.SpiralMatrixСounterClockWise();
+
         //TEST 2 Random value
         Random rnd = new Random();
         for (int i = 0; i < 10; ++i)
         {
             int n = rnd.Next(2, 10);
             int m = rnd.Next(2, 10);
-            SnakeMatrixTask1_1.Array(n, m);
-            Console.WriteLine("-------------------");
+
+            Console.WriteLine("----------counterclockwise---------");
+            SnakeMatrixTask1_1.SpiralMatrixСlockwiseTop(n, m);
+
+            Console.WriteLine("----------clockwise---------");
+            SnakeMatrixTask1_1.SpiralMatrixСounterClockWise(n, m);
+
         }
     }
 }

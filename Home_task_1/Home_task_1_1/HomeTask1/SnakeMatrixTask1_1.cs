@@ -8,7 +8,7 @@ namespace HomeTask1;
 
 internal class SnakeMatrixTask1_1
 {
-    public static int[,] Array(int n = 3, int m = 4)
+    public static void SpiralMatrixСounterClockWise(int n = 3, int m = 4)
     {
         int[,] matrixSnake = new int[n, m];
 
@@ -49,7 +49,7 @@ internal class SnakeMatrixTask1_1
             bottomLine--;
         }
 
-        int[,] result = new int[n, m];  //flip the matrix
+        int[,] result = new int[n, m]; //flip the matrix
         for (int i = 0; i < n; ++i)
         {
             for (int j = 0; j < m; ++j)
@@ -58,7 +58,7 @@ internal class SnakeMatrixTask1_1
             }
         }
 
-        for (int i = 0; i < n; ++i)     //Print matrix
+        for (int i = 0; i < n; ++i) //Print matrix
         {
             for (int j = 0; j < m; ++j)
             {
@@ -68,6 +68,46 @@ internal class SnakeMatrixTask1_1
         }
 
         Console.ReadKey();
-        return matrixSnake;
+    }
+
+    public static void SpiralMatrixСlockwiseTop(int n = 3, int m = 4)
+    {
+        int[,] matrix = new int[n, m];
+
+        int value = 1;
+        int top = 0, bottom = n - 1, left = 0, right = m - 1;
+
+        while (value <= n * m)
+        {
+            for (int i = left; i <= right; i++) // fill top row from left to right
+                matrix[top, i] = value++;
+
+            top++;
+
+            for (int i = top; i <= bottom; i++) // fill right column from top to bottom
+                matrix[i, right] = value++;
+
+            right--;
+
+            for (int i = right; i >= left; i--) // fill bottom row from right to left
+                matrix[bottom, i] = value++;
+
+            bottom--;
+
+            for (int i = bottom; i >= top; i--) // fill left column from bottom to top
+                matrix[i, left] = value++;
+
+            left++;
+        }
+                
+        for (int i = 0; i < n; i++) // print the matrix
+        {
+            for (int j = 0; j < m; j++)
+                Console.Write("{0,4}", matrix[i, j]);
+
+            Console.WriteLine();
+        }
+
+        Console.ReadKey();
     }
 }

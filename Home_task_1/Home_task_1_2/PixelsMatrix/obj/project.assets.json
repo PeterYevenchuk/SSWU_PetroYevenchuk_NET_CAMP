@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\petro\\source\\repos\\.NET_CAMP_HW\\PixelsMatrix\\PixelsMatrix\\PixelsMatrix.csproj",
+      "projectUniqueName": "C:\\Users\\petro\\source\\repos\\.NET_CAMP_HW\\Home_task_1_2\\PixelsMatrix\\PixelsMatrix.csproj",
       "projectName": "PixelsMatrix",
-      "projectPath": "C:\\Users\\petro\\source\\repos\\.NET_CAMP_HW\\PixelsMatrix\\PixelsMatrix\\PixelsMatrix.csproj",
+      "projectPath": "C:\\Users\\petro\\source\\repos\\.NET_CAMP_HW\\Home_task_1_2\\PixelsMatrix\\PixelsMatrix.csproj",
       "packagesPath": "C:\\Users\\petro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\petro\\source\\repos\\.NET_CAMP_HW\\PixelsMatrix\\PixelsMatrix\\obj\\",
+      "outputPath": "C:\\Users\\petro\\source\\repos\\.NET_CAMP_HW\\Home_task_1_2\\PixelsMatrix\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -12,7 +12,7 @@ class Program
             { 5, 0, 1, 0, 0 }
         };
         PixelsMatrixTask1_2.PixelsColor(matrix);
-        Console.WriteLine("---------------------");
+        Console.WriteLine();
 
         //TEST 2 Random value
         Random random = new Random();
@@ -28,7 +28,7 @@ class Program
             }
         }
 
-        Console.WriteLine("Матриця:");
+        Console.WriteLine("Matrix:");
         for (int i = 0; i < n; i++)
         {
             for (int j = 0; j < m; j++)
