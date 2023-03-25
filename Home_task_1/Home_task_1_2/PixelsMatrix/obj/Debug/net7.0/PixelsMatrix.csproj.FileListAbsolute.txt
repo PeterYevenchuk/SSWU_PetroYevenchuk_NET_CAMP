@@ -1,0 +1,15 @@
+C:\Users\petro\source\repos\.NET_CAMP_HW\PixelsMatrix\PixelsMatrix\bin\Debug\net7.0\PixelsMatrix.exe
+C:\Users\petro\source\repos\.NET_CAMP_HW\PixelsMatrix\PixelsMatrix\bin\Debug\net7.0\PixelsMatrix.deps.json
+C:\Users\petro\source\repos\.NET_CAMP_HW\PixelsMatrix\PixelsMatrix\bin\Debug\net7.0\PixelsMatrix.runtimeconfig.json
+C:\Users\petro\source\repos\.NET_CAMP_HW\PixelsMatrix\PixelsMatrix\bin\Debug\net7.0\PixelsMatrix.dll
+C:\Users\petro\source\repos\.NET_CAMP_HW\PixelsMatrix\PixelsMatrix\bin\Debug\net7.0\PixelsMatrix.pdb
+C:\Users\petro\source\repos\.NET_CAMP_HW\PixelsMatrix\PixelsMatrix\obj\Debug\net7.0\PixelsMatrix.csproj.AssemblyReference.cache
+C:\Users\petro\source\repos\.NET_CAMP_HW\PixelsMatrix\PixelsMatrix\obj\Debug\net7.0\PixelsMatrix.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\petro\source\repos\.NET_CAMP_HW\PixelsMatrix\PixelsMatrix\obj\Debug\net7.0\PixelsMatrix.AssemblyInfoInputs.cache
+C:\Users\petro\source\repos\.NET_CAMP_HW\PixelsMatrix\PixelsMatrix\obj\Debug\net7.0\PixelsMatrix.AssemblyInfo.cs
+C:\Users\petro\source\repos\.NET_CAMP_HW\PixelsMatrix\PixelsMatrix\obj\Debug\net7.0\PixelsMatrix.csproj.CoreCompileInputs.cache
+C:\Users\petro\source\repos\.NET_CAMP_HW\PixelsMatrix\PixelsMatrix\obj\Debug\net7.0\PixelsMatrix.dll
+C:\Users\petro\source\repos\.NET_CAMP_HW\PixelsMatrix\PixelsMatrix\obj\Debug\net7.0\refint\PixelsMatrix.dll
+C:\Users\petro\source\repos\.NET_CAMP_HW\PixelsMatrix\PixelsMatrix\obj\Debug\net7.0\PixelsMatrix.pdb
+C:\Users\petro\source\repos\.NET_CAMP_HW\PixelsMatrix\PixelsMatrix\obj\Debug\net7.0\PixelsMatrix.genruntimeconfig.cache
+C:\Users\petro\source\repos\.NET_CAMP_HW\PixelsMatrix\PixelsMatrix\obj\Debug\net7.0\ref\PixelsMatrix.dll

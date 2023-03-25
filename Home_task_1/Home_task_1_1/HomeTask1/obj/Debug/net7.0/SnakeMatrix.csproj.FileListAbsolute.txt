@@ -1,0 +1,15 @@
+C:\Users\petro\source\repos\.NET_CAMP_HW\SnakeMatrix\HomeTask1\bin\Debug\net7.0\SnakeMatrix.exe
+C:\Users\petro\source\repos\.NET_CAMP_HW\SnakeMatrix\HomeTask1\bin\Debug\net7.0\SnakeMatrix.deps.json
+C:\Users\petro\source\repos\.NET_CAMP_HW\SnakeMatrix\HomeTask1\bin\Debug\net7.0\SnakeMatrix.runtimeconfig.json
+C:\Users\petro\source\repos\.NET_CAMP_HW\SnakeMatrix\HomeTask1\bin\Debug\net7.0\SnakeMatrix.dll
+C:\Users\petro\source\repos\.NET_CAMP_HW\SnakeMatrix\HomeTask1\bin\Debug\net7.0\SnakeMatrix.pdb
+C:\Users\petro\source\repos\.NET_CAMP_HW\SnakeMatrix\HomeTask1\obj\Debug\net7.0\SnakeMatrix.csproj.AssemblyReference.cache
+C:\Users\petro\source\repos\.NET_CAMP_HW\SnakeMatrix\HomeTask1\obj\Debug\net7.0\SnakeMatrix.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\petro\source\repos\.NET_CAMP_HW\SnakeMatrix\HomeTask1\obj\Debug\net7.0\SnakeMatrix.AssemblyInfoInputs.cache
+C:\Users\petro\source\repos\.NET_CAMP_HW\SnakeMatrix\HomeTask1\obj\Debug\net7.0\SnakeMatrix.AssemblyInfo.cs
+C:\Users\petro\source\repos\.NET_CAMP_HW\SnakeMatrix\HomeTask1\obj\Debug\net7.0\SnakeMatrix.csproj.CoreCompileInputs.cache
+C:\Users\petro\source\repos\.NET_CAMP_HW\SnakeMatrix\HomeTask1\obj\Debug\net7.0\SnakeMatrix.dll
+C:\Users\petro\source\repos\.NET_CAMP_HW\SnakeMatrix\HomeTask1\obj\Debug\net7.0\refint\SnakeMatrix.dll
+C:\Users\petro\source\repos\.NET_CAMP_HW\SnakeMatrix\HomeTask1\obj\Debug\net7.0\SnakeMatrix.pdb
+C:\Users\petro\source\repos\.NET_CAMP_HW\SnakeMatrix\HomeTask1\obj\Debug\net7.0\SnakeMatrix.genruntimeconfig.cache
+C:\Users\petro\source\repos\.NET_CAMP_HW\SnakeMatrix\HomeTask1\obj\Debug\net7.0\ref\SnakeMatrix.dll

@@ -1,0 +1,15 @@
+C:\Users\petro\source\repos\HomeTask1\HomeTask1\bin\Debug\net7.0\HomeTask1.exe
+C:\Users\petro\source\repos\HomeTask1\HomeTask1\bin\Debug\net7.0\HomeTask1.deps.json
+C:\Users\petro\source\repos\HomeTask1\HomeTask1\bin\Debug\net7.0\HomeTask1.runtimeconfig.json
+C:\Users\petro\source\repos\HomeTask1\HomeTask1\bin\Debug\net7.0\HomeTask1.dll
+C:\Users\petro\source\repos\HomeTask1\HomeTask1\bin\Debug\net7.0\HomeTask1.pdb
+C:\Users\petro\source\repos\HomeTask1\HomeTask1\obj\Debug\net7.0\HomeTask1.csproj.AssemblyReference.cache
+C:\Users\petro\source\repos\HomeTask1\HomeTask1\obj\Debug\net7.0\HomeTask1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\petro\source\repos\HomeTask1\HomeTask1\obj\Debug\net7.0\HomeTask1.AssemblyInfoInputs.cache
+C:\Users\petro\source\repos\HomeTask1\HomeTask1\obj\Debug\net7.0\HomeTask1.AssemblyInfo.cs
+C:\Users\petro\source\repos\HomeTask1\HomeTask1\obj\Debug\net7.0\HomeTask1.csproj.CoreCompileInputs.cache
+C:\Users\petro\source\repos\HomeTask1\HomeTask1\obj\Debug\net7.0\HomeTask1.dll
+C:\Users\petro\source\repos\HomeTask1\HomeTask1\obj\Debug\net7.0\refint\HomeTask1.dll
+C:\Users\petro\source\repos\HomeTask1\HomeTask1\obj\Debug\net7.0\HomeTask1.pdb
+C:\Users\petro\source\repos\HomeTask1\HomeTask1\obj\Debug\net7.0\HomeTask1.genruntimeconfig.cache
+C:\Users\petro\source\repos\HomeTask1\HomeTask1\obj\Debug\net7.0\ref\HomeTask1.dll
