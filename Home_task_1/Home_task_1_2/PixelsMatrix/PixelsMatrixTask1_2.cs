@@ -8,7 +8,7 @@ namespace PixelsMatrix;
 
 internal class PixelsMatrixTask1_2
 {
-    public static int[,] PixelsColor(int[,] pixelsColor)
+    public static void PixelsColor(int[,] pixelsColor)
     {
         int maxLength = 0;
         int maxStartRow = 0;
@@ -45,6 +45,5 @@ internal class PixelsMatrixTask1_2
         Console.WriteLine($"Length longest horizontal line = {maxLength}," +
             $" start in row {maxStartRow} and column {maxStartCol} and end in column {maxEndCol}.");
 
-        return pixelsColor;
     }
 }
