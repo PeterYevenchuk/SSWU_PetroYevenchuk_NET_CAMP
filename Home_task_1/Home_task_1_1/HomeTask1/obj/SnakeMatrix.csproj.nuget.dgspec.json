@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\petro\\source\\repos\\.NET_CAMP_HW\\Home_task_1_1\\HomeTask1\\SnakeMatrix.csproj": {}
+    "C:\\Users\\petro\\OneDrive\\Документы\\GitHub\\SSWU_PetroYevenchuk_NET_CAMP\\Home_task_1\\Home_task_1_1\\HomeTask1\\SnakeMatrix.csproj": {}
   },
   "projects": {
-    "C:\\Users\\petro\\source\\repos\\.NET_CAMP_HW\\Home_task_1_1\\HomeTask1\\SnakeMatrix.csproj": {
+    "C:\\Users\\petro\\OneDrive\\Документы\\GitHub\\SSWU_PetroYevenchuk_NET_CAMP\\Home_task_1\\Home_task_1_1\\HomeTask1\\SnakeMatrix.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\petro\\source\\repos\\.NET_CAMP_HW\\Home_task_1_1\\HomeTask1\\SnakeMatrix.csproj",
+        "projectUniqueName": "C:\\Users\\petro\\OneDrive\\Документы\\GitHub\\SSWU_PetroYevenchuk_NET_CAMP\\Home_task_1\\Home_task_1_1\\HomeTask1\\SnakeMatrix.csproj",
         "projectName": "SnakeMatrix",
-        "projectPath": "C:\\Users\\petro\\source\\repos\\.NET_CAMP_HW\\Home_task_1_1\\HomeTask1\\SnakeMatrix.csproj",
+        "projectPath": "C:\\Users\\petro\\OneDrive\\Документы\\GitHub\\SSWU_PetroYevenchuk_NET_CAMP\\Home_task_1\\Home_task_1_1\\HomeTask1\\SnakeMatrix.csproj",
         "packagesPath": "C:\\Users\\petro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\petro\\source\\repos\\.NET_CAMP_HW\\Home_task_1_1\\HomeTask1\\obj\\",
+        "outputPath": "C:\\Users\\petro\\OneDrive\\Документы\\GitHub\\SSWU_PetroYevenchuk_NET_CAMP\\Home_task_1\\Home_task_1_1\\HomeTask1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

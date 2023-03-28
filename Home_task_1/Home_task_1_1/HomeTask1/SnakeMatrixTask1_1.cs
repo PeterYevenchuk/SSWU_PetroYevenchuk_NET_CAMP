@@ -8,45 +8,51 @@ namespace HomeTask1;
 
 internal class SnakeMatrixTask1_1
 {
+    private static int[,] matrixSnake; //matrix
+    private static int _topLine;
+    private static int _bottomLine;
+    private static int _leftLine;
+    private static int _rightLine;
+    private static int _value; // iterator
+
     public static void SpiralMatrixСounterClockWise(int n = 3, int m = 4)
     {
-        int[,] matrixSnake = new int[n, m];
+        matrixSnake = new int[n, m];
+        _topLine = 0;
+        _bottomLine = n - 1;
+        _leftLine = 0;
+        _rightLine = m - 1;
+        _value = 1; 
 
-        int val = 1; // iterator
-        int topLine = 0;
-        int bottomLine = n - 1;
-        int leftLine = 0;
-        int rightLine = m - 1;
-
-        while (val <= n * m) // while matrix don`t fill
+        while (_value <= n * m) // while matrix don`t fill
         {
-            for (int i = bottomLine; i >= topLine; --i) //fill bottom border from bottom to top
+            for (int i = _bottomLine; i >= _topLine; --i) //fill bottom border from bottom to top
             {
-                matrixSnake[i, leftLine] = val;
-                val++;
+                matrixSnake[i, _leftLine] = _value;
+                _value++;
             }
-            leftLine++;
+            _leftLine++;
 
-            for (int i = leftLine; i <= rightLine; ++i) //fill left border from left to right
+            for (int i = _leftLine; i <= _rightLine; ++i) //fill left border from left to right
             {
-                matrixSnake[topLine, i] = val;
-                val++;
+                matrixSnake[_topLine, i] = _value;
+                _value++;
             }
-            topLine++;
+            _topLine++;
 
-            for (int i = topLine; i <= bottomLine; ++i) //fill the top border from top to bottom 
+            for (int i = _topLine; i <= _bottomLine; ++i) //fill the top border from top to bottom 
             {
-                matrixSnake[i, rightLine] = val;
-                val++;
+                matrixSnake[i, _rightLine] = _value;
+                _value++;
             }
-            rightLine--;
+            _rightLine--;
 
-            for (int i = rightLine; i >= leftLine; --i) //fill right border from right to left
+            for (int i = _rightLine; i >= _leftLine; --i) //fill right border from right to left
             {
-                matrixSnake[bottomLine, i] = val;
-                val++;
+                matrixSnake[_bottomLine, i] = _value;
+                _value++;
             }
-            bottomLine--;
+            _bottomLine--;
         }
 
         int[,] result = new int[n, m]; //flip the matrix
@@ -72,38 +78,40 @@ internal class SnakeMatrixTask1_1
 
     public static void SpiralMatrixСlockwiseTop(int n = 3, int m = 4)
     {
-        int[,] matrix = new int[n, m];
+        matrixSnake = new int[n, m];
+        _topLine = 0;
+        _bottomLine = n - 1;
+        _leftLine = 0;
+        _rightLine = m - 1;
+        _value = 1;
 
-        int value = 1;
-        int top = 0, bottom = n - 1, left = 0, right = m - 1;
-
-        while (value <= n * m)
+        while (_value <= n * m)
         {
-            for (int i = left; i <= right; i++) // fill top row from left to right
-                matrix[top, i] = value++;
+            for (int i = _leftLine; i <= _rightLine; i++) // fill top row from left to right
+                matrixSnake[_topLine, i] = _value++;
 
-            top++;
+            _topLine++;
 
-            for (int i = top; i <= bottom; i++) // fill right column from top to bottom
-                matrix[i, right] = value++;
+            for (int i = _topLine; i <= _bottomLine; i++) // fill right column from top to bottom
+                matrixSnake[i, _rightLine] = _value++;
 
-            right--;
+            _rightLine--;
 
-            for (int i = right; i >= left; i--) // fill bottom row from right to left
-                matrix[bottom, i] = value++;
+            for (int i = _rightLine; i >= _leftLine; i--) // fill bottom row from right to left
+                matrixSnake[_bottomLine, i] = _value++;
 
-            bottom--;
+            _bottomLine--;
 
-            for (int i = bottom; i >= top; i--) // fill left column from bottom to top
-                matrix[i, left] = value++;
+            for (int i = _bottomLine; i >= _topLine; i--) // fill left column from bottom to top
+                matrixSnake[i, _leftLine] = _value++;
 
-            left++;
+            _leftLine++;
         }
                 
         for (int i = 0; i < n; i++) // print the matrix
         {
             for (int j = 0; j < m; j++)
-                Console.Write("{0,4}", matrix[i, j]);
+                Console.Write("{0,4}", matrixSnake[i, j]);
 
             Console.WriteLine();
         }
