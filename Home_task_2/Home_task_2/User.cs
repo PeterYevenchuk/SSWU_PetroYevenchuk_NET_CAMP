@@ -1,24 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace Home_task_2;
 
-namespace Home_task_2
+public class User
 {
-    internal class User
+    private double _waterConsumptionRate;
+
+    public User(double waterConsumptionRate)
     {
-        private string _name;
-        private double _waterConsumptionRate;
+        _waterConsumptionRate = waterConsumptionRate;
+    }
 
-        public User(double waterConsumptionRate)
-        {
-            _waterConsumptionRate = waterConsumptionRate;
-        }
-
-        public User(string name)
-        {
-            _name = name;
-        }
+    public double GetWaterConsumptionRate()
+    {
+        return _waterConsumptionRate;
     }
 }
