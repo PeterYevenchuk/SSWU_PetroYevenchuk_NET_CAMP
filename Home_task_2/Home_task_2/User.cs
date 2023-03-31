@@ -15,5 +15,10 @@ namespace Home_task_2
         {
             _waterConsumptionRate = waterConsumptionRate;
         }
+
+        public User(string name)
+        {
+            _name = name;
+        }
     }
 }

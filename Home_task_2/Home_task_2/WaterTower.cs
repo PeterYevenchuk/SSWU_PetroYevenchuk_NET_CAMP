@@ -10,7 +10,7 @@ namespace Home_task_2
     internal class WaterTower
     {
         private double _maxCapacity;
-        public double CurrentCapacity { get; private set; }// water level now in liters
+        public double CurrentCapacity { get; private set; } // рівень води на даний час
 
         public WaterTower(double maxCapacity)
         {

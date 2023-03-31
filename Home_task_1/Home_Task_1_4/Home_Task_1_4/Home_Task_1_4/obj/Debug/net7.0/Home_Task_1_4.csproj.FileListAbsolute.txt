@@ -1,0 +1,15 @@
+C:\Users\petro\OneDrive\Документы\GitHub\SSWU_PetroYevenchuk_NET_CAMP\Home_task_1\Home_Task_1_4\Home_Task_1_4\Home_Task_1_4\bin\Debug\net7.0\Home_Task_1_4.exe
+C:\Users\petro\OneDrive\Документы\GitHub\SSWU_PetroYevenchuk_NET_CAMP\Home_task_1\Home_Task_1_4\Home_Task_1_4\Home_Task_1_4\bin\Debug\net7.0\Home_Task_1_4.deps.json
+C:\Users\petro\OneDrive\Документы\GitHub\SSWU_PetroYevenchuk_NET_CAMP\Home_task_1\Home_Task_1_4\Home_Task_1_4\Home_Task_1_4\bin\Debug\net7.0\Home_Task_1_4.runtimeconfig.json
+C:\Users\petro\OneDrive\Документы\GitHub\SSWU_PetroYevenchuk_NET_CAMP\Home_task_1\Home_Task_1_4\Home_Task_1_4\Home_Task_1_4\bin\Debug\net7.0\Home_Task_1_4.dll
+C:\Users\petro\OneDrive\Документы\GitHub\SSWU_PetroYevenchuk_NET_CAMP\Home_task_1\Home_Task_1_4\Home_Task_1_4\Home_Task_1_4\bin\Debug\net7.0\Home_Task_1_4.pdb
+C:\Users\petro\OneDrive\Документы\GitHub\SSWU_PetroYevenchuk_NET_CAMP\Home_task_1\Home_Task_1_4\Home_Task_1_4\Home_Task_1_4\obj\Debug\net7.0\Home_Task_1_4.csproj.AssemblyReference.cache
+C:\Users\petro\OneDrive\Документы\GitHub\SSWU_PetroYevenchuk_NET_CAMP\Home_task_1\Home_Task_1_4\Home_Task_1_4\Home_Task_1_4\obj\Debug\net7.0\Home_Task_1_4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\petro\OneDrive\Документы\GitHub\SSWU_PetroYevenchuk_NET_CAMP\Home_task_1\Home_Task_1_4\Home_Task_1_4\Home_Task_1_4\obj\Debug\net7.0\Home_Task_1_4.AssemblyInfoInputs.cache
+C:\Users\petro\OneDrive\Документы\GitHub\SSWU_PetroYevenchuk_NET_CAMP\Home_task_1\Home_Task_1_4\Home_Task_1_4\Home_Task_1_4\obj\Debug\net7.0\Home_Task_1_4.AssemblyInfo.cs
+C:\Users\petro\OneDrive\Документы\GitHub\SSWU_PetroYevenchuk_NET_CAMP\Home_task_1\Home_Task_1_4\Home_Task_1_4\Home_Task_1_4\obj\Debug\net7.0\Home_Task_1_4.csproj.CoreCompileInputs.cache
+C:\Users\petro\OneDrive\Документы\GitHub\SSWU_PetroYevenchuk_NET_CAMP\Home_task_1\Home_Task_1_4\Home_Task_1_4\Home_Task_1_4\obj\Debug\net7.0\Home_Task_1_4.dll
+C:\Users\petro\OneDrive\Документы\GitHub\SSWU_PetroYevenchuk_NET_CAMP\Home_task_1\Home_Task_1_4\Home_Task_1_4\Home_Task_1_4\obj\Debug\net7.0\refint\Home_Task_1_4.dll
+C:\Users\petro\OneDrive\Документы\GitHub\SSWU_PetroYevenchuk_NET_CAMP\Home_task_1\Home_Task_1_4\Home_Task_1_4\Home_Task_1_4\obj\Debug\net7.0\Home_Task_1_4.pdb
+C:\Users\petro\OneDrive\Документы\GitHub\SSWU_PetroYevenchuk_NET_CAMP\Home_task_1\Home_Task_1_4\Home_Task_1_4\Home_Task_1_4\obj\Debug\net7.0\Home_Task_1_4.genruntimeconfig.cache
+C:\Users\petro\OneDrive\Документы\GitHub\SSWU_PetroYevenchuk_NET_CAMP\Home_task_1\Home_Task_1_4\Home_Task_1_4\Home_Task_1_4\obj\Debug\net7.0\ref\Home_Task_1_4.dll

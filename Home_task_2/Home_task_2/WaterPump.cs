@@ -8,8 +8,8 @@ namespace Home_task_2
 {
     internal class WaterPump
     {
-        private double _capacity;
-        private double _speed;
+        private double _capacity; // потужність качання води помпи
+        private double _speed; // швидкість качання води помпи
 
         public WaterPump(double capacity, double speed)
         {
@@ -17,7 +17,7 @@ namespace Home_task_2
             _speed = speed;
         }
 
-        public double GetPumpingTime(double amount)
+        public double GetPumpingTime(double amount) // метод який вираховує час для закачування води
         {
             return amount / _speed;
         }
