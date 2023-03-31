@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\petro\\OneDrive\\Документы\\GitHub\\SSWU_PetroYevenchuk_NET_CAMP\\Home_task_1\\Home_Task_1_4\\Home_Task_1_4\\Home_Task_1_4\\Home_Task_1_4.csproj",
+      "projectUniqueName": "C:\\Users\\petro\\OneDrive\\Документы\\GitHub\\SSWU_PetroYevenchuk_NET_CAMP\\Home_task_1\\Home_Task_1_4\\Home_Task_1_4\\Home_Task_1_4.csproj",
       "projectName": "Home_Task_1_4",
-      "projectPath": "C:\\Users\\petro\\OneDrive\\Документы\\GitHub\\SSWU_PetroYevenchuk_NET_CAMP\\Home_task_1\\Home_Task_1_4\\Home_Task_1_4\\Home_Task_1_4\\Home_Task_1_4.csproj",
+      "projectPath": "C:\\Users\\petro\\OneDrive\\Документы\\GitHub\\SSWU_PetroYevenchuk_NET_CAMP\\Home_task_1\\Home_Task_1_4\\Home_Task_1_4\\Home_Task_1_4.csproj",
       "packagesPath": "C:\\Users\\petro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\petro\\OneDrive\\Документы\\GitHub\\SSWU_PetroYevenchuk_NET_CAMP\\Home_task_1\\Home_Task_1_4\\Home_Task_1_4\\Home_Task_1_4\\obj\\",
+      "outputPath": "C:\\Users\\petro\\OneDrive\\Документы\\GitHub\\SSWU_PetroYevenchuk_NET_CAMP\\Home_task_1\\Home_Task_1_4\\Home_Task_1_4\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
