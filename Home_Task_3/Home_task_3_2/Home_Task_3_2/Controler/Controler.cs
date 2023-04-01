@@ -53,7 +53,7 @@ namespace Home_Task_3_2.Controler
 
                     validator.Text = textDoublingLetters;
                     validator.Text = textUser;
-                    doublingLetters.DoublingLettersCheck(textDoublingLetters);
+                    doublingLetters.DoublingLettersCheck(textDoublingLetters, textUser);
                     break;
                 default:
                     Console.WriteLine("The data is entered incorrectly");

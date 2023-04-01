@@ -2,14 +2,21 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace Home_Task_3_2.Tasks
 {
     internal class DoublingLetters
     {
-        public void DoublingLettersCheck(string text = "", string textUser = "")
+        public void DoublingLettersCheck(string text = "", string replacement = "")
         {
+            /*            string pattern = @"\b\w*(\w)\1\w*\b";
+                        Regex regex = new Regex(pattern);
+                        string result = regex.Replace(text, replacement);
+
+                        Console.WriteLine(result);*/
+
             string[] words = text.Split(' ');
 
             for (int i = 0; i < words.Length; i++)
@@ -17,7 +24,7 @@ namespace Home_Task_3_2.Tasks
                 if (HasDuplicateLetters(words[i]))
                 {
                     // if the word contains doubling of letters, we replace it with the given text
-                    words[i] = textUser;
+                    words[i] = replacement;
                 }
             }
 
