@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace HomeTask1;
 
 internal class SnakeMatrixTask1_1
-{
+{// Якщо чітко під завдання і не планувати розширення, то погоджусь зі статичністю. У іншому випадку -ні)
     private static int[,] matrixSnake; //matrix
     private static int _topLine;
     private static int _bottomLine;
@@ -23,7 +23,7 @@ internal class SnakeMatrixTask1_1
         _leftLine = 0;
         _rightLine = m - 1;
         _value = 1; 
-
+// Цю умову треба оптимізувати.
         while (_value <= n * m) // while matrix don`t fill
         {
             for (int i = _bottomLine; i >= _topLine; --i) //fill bottom border from bottom to top
@@ -107,7 +107,7 @@ internal class SnakeMatrixTask1_1
 
             _leftLine++;
         }
-                
+        // Друкувати треба в класі клієнті.        
         for (int i = 0; i < n; i++) // print the matrix
         {
             for (int j = 0; j < m; j++)
