@@ -25,7 +25,7 @@ internal class PixelsMatrixTask1_2
                 if (pixelsColor[i, j] == pixelsColor[i, j - 1])
                 {
                     currentLength++;
-
+// Ви на кожному пікселі порівнюєте з максимумом, хоча можна це зробити тільки коли відбувається зміна кольору.
                     if (currentLength > maxLength)
                     {
                         maxLength = currentLength;
@@ -41,7 +41,7 @@ internal class PixelsMatrixTask1_2
                 }
             }
         }
-
+//результат треба передавати через параметри методу і як повернення, а не друкувати тут
         Console.WriteLine($"Length longest horizontal line = {maxLength}," +
             $" start in row {maxStartRow} and column {maxStartCol} and end in column {maxEndCol}.");
 
