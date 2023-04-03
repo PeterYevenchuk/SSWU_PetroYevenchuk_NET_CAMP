@@ -5,13 +5,15 @@ namespace Home_task_2;
 public class MainView : View
 {
     private WaterSimulation _waterSimulation;
-    public MainView(WaterSimulation waterSimulation)
+    private User _user;
+    public MainView(WaterSimulation waterSimulation, User user)
     {
         _waterSimulation = waterSimulation;
+        _user = user;
     }
 
     public override void SendCommand()
     {
-        _waterSimulation.Simulate(1);
+        _waterSimulation.Simulate(_user.GetWaterConsumptionRate());
     }
 }

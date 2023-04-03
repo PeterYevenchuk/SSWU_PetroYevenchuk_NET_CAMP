@@ -11,13 +11,13 @@ public class SimulationOfWaterPumping : WaterSimulation
     {
         _waterTower.OnStatePumpEvent += _waterPump.PumpState;
 
-        _waterTower.AddWater(100);
+        _waterTower.AddWater(simulationDuration);
         ToString();
 
-        _waterTower.AddWater(100);
+        _waterTower.AddWater(simulationDuration);
         ToString();
 
-        _waterTower.AddWater(100);
+        _waterTower.AddWater(simulationDuration);
         ToString();
 
     }
