@@ -8,7 +8,6 @@ class Program
 
         int size = 5; // Розмір куба
 
-        cubeMatrix.CreateCube(size);
         int[,,] cube = cubeMatrix.CreateCube(size);
 
         cubeMatrix.DispayCube(cube, size);
