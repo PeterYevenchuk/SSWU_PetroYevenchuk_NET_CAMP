@@ -2,6 +2,7 @@
 
 internal class Program
 {//1 задача не подібно до інших, але не правильно. Можу пояснити усно...
+    //Де задача на стрічки?
     static void Main(string[] args)
     {
         Controler controler = new Controler();
