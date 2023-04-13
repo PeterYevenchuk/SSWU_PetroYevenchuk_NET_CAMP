@@ -1,7 +1,11 @@
-﻿namespace Home_Task_4_1;
+﻿using System.Text;
+using System.Text.RegularExpressions;
+
+namespace Home_Task_4_1;
 
 public class SentencesWithParentheses
 {
+
     public List<string> Sentences(string text)
     {
         List<string> sentences = new List<string>();
@@ -22,7 +26,25 @@ public class SentencesWithParentheses
 
         foreach (string sentence in sentences)
         {
-            if (sentence.Contains("(") && sentence.Contains(")")) // Find sentences containing information in parentheses
+            if ((sentence.Contains("(") && sentence.Contains(")")) ||
+                (sentence.Contains("[") && sentence.Contains("]")) ||
+                (sentence.Contains("{") && sentence.Contains("}"))) // Find sentences containing information in parentheses
+            {
+                sentencesWithInfoInBrackets.Add(sentence.Trim());
+            }
+        }
+        return sentencesWithInfoInBrackets;
+    }
+
+    public List<string> SentencesRegex(string text)
+    {
+        string[] sentences = Regex.Split(text, @"(?<=[.?!])\s+");
+
+        List<string> sentencesWithInfoInBrackets = new List<string>();
+
+        foreach (string sentence in sentences)
+        {
+            if (Regex.IsMatch(sentence, @"[\(\[\{].*[\)\]\}]"))
             {
                 sentencesWithInfoInBrackets.Add(sentence.Trim());
             }

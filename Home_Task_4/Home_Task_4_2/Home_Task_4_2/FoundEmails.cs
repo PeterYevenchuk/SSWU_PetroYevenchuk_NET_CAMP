@@ -1,4 +1,5 @@
 ﻿using System.Net.Mail;
+using System.Text.RegularExpressions;
 
 namespace Home_Task_4_2;
 
@@ -24,5 +25,17 @@ public class FoundEmails
                 }
             }
         }
+    }
+
+    public MatchCollection GetValidEmails(string text)
+    {
+        string emailPattern = @"\b[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}\b";
+        return Regex.Matches(text, emailPattern);
+    }
+
+    public MatchCollection GetInvalidEmails(string text)
+    {
+        string invalidEmailPattern = @"\b[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}\b";
+        return Regex.Matches(text, invalidEmailPattern);
     }
 }
