@@ -6,6 +6,7 @@ public class Program
 {
     static void Main(string[] args)
     {
+        // В даній задачі я застосував так званий алгоритм Джарвіса або "обертального маршу"
         Random random = new Random();
 
         int numOfPoints1 = random.Next(1, 11);
