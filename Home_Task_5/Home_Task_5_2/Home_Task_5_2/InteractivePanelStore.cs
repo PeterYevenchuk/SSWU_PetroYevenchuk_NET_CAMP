@@ -26,15 +26,27 @@ public class InteractivePanelStore
     public List<Product> FoundProduct(string productName, Store store)
     {
         List<Product> products = new();
-        string[] names = productName.Split(" ");
+        string[] names = productName.Split(' ');
 
         for (int i = 0; i < names.Length; i++)
+        {
+            string product = names[i];
+            if (!string.IsNullOrEmpty(product))
+            {
+                names[i] = char.ToUpper(product[0]) + product.Substring(1).ToLower();
+            }
+        }
+
+        string formattedNames = string.Join(" ", names);
+        string[] formattedProducts = formattedNames.Split(" ");
+
+        for (int i = 0; i < formattedProducts.Length; i++)
         {
             foreach (var department in store.departments)
             {
                 foreach (var product in department.Products)
                 {
-                    if (names[i] == product.Name)
+                    if (formattedProducts[i] == product.Name)
                     {
                         products.Add(product);
                     }

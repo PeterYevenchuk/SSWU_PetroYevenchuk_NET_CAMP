@@ -7,19 +7,19 @@ class Program
     static void Main(string[] args)
     {
         Console.OutputEncoding = UnicodeEncoding.UTF8;
-        InteractivePanelStore intectivePanelStore = new();
+        InteractivePanelStore interactivePanelStore = new();
         InteractivePanelSortingBox interactivePanelSortingBox = new();
 
         Console.WriteLine("Ведіть назву магазина: ");
         string nameStore = Console.ReadLine();
 
         Console.WriteLine("\nВиберіть підрозділи які будуть знаходитися в магазині: ");
-        intectivePanelStore.DisplayDepartmens();
+        interactivePanelStore.DisplayDepartmens();
 
         Console.WriteLine("\nВведіть структуру магазина вибираючи номера підрозділів(номера писати без пробіла): ");
         string numStr = Console.ReadLine();
 
-        var numbersDertament = intectivePanelStore.SetNumbersDepartmens(numStr);
+        var numbersDertament = interactivePanelStore.SetNumbersDepartmens(numStr);
         Store store = new(numbersDertament);
         Console.WriteLine();
         foreach (var department in store.departments)
@@ -37,7 +37,7 @@ class Program
         Console.WriteLine("Напишіть назви продуктів через ПРОБІЛ які ви хочете купити: ");
         string nameProduct = Console.ReadLine();
 
-        var selectedProducts =  intectivePanelStore.FoundProduct(nameProduct, store);
+        var selectedProducts = interactivePanelStore.FoundProduct(nameProduct, store);
         var organizeBoxes = interactivePanelSortingBox.OrganizeProductsByBox(numbersDertament, selectedProducts);
         interactivePanelSortingBox.SortingBoxByArea(organizeBoxes, nameStore);
     }
