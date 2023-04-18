@@ -19,25 +19,17 @@ class Program
         var numbersDertament = intectivePanelStore.SetNumbersDepartmens(numStr);
         Store store = new(numbersDertament);
 
+        Console.WriteLine();
         foreach (var department in store.departments)
         {
             string str;
 
             foreach (var product in department.Products)
             {
-                str = product.Name;
-
-                if (product != department.Products.Last())
-                {
-                    str += ", ";
-                }
-                else
-                {
-                    str += ".";
-                }
-                Console.Write(str);
+                str = product.Name + " ";
+                Console.Write("{0,-12}", str);
             }
-            Console.WriteLine();
+            Console.WriteLine("\n");
         }
 
         Console.WriteLine("Напишіть назви продуктів через ПРОБІЛ які ви хочете купити: ");

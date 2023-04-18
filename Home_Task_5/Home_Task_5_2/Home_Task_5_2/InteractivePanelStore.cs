@@ -1,4 +1,5 @@
 ﻿using System.Security.Cryptography.X509Certificates;
+using System.Text;
 
 namespace Home_Task_5_2;
 
@@ -13,6 +14,7 @@ public class InteractivePanelStore
     {
         TypeDepartment[] days = (TypeDepartment[])Enum.GetValues(typeof(TypeDepartment));
 
+        Console.WriteLine("\nВиберіть підрозділи які будуть знаходитися в магазині: ");
         int number = 0;
         foreach (TypeDepartment day in days)
         {
@@ -54,6 +56,7 @@ public class InteractivePanelStore
 
     public List<Box> OrganizeProductsByBox(int[] numbersDepartaments, List<Product> protuctsAllDepartament)
     {
+        Console.OutputEncoding = UnicodeEncoding.UTF8;
         List<Box> boxes = new();
         List<Product> products = new();
 
@@ -76,11 +79,11 @@ public class InteractivePanelStore
                 maxHeight += product.Height;
             }
 
-            Console.WriteLine(" Box: " +
-                " Height: " + maxHeight +
-                " Width: " + products.Last().Width +
-                " Length: " + products.Last().Length +
-                " Department " + Enum.GetName(typeof(TypeDepartment), products.Last().Index));
+            Console.WriteLine("\nКоробка з продуктами підрозділу:" +
+                 "\nВисота: " + maxHeight +
+                 "\tШирина: " + products.Last().Width +
+                 "\tДовжина: " + products.Last().Length +
+                 "\tПідрозділ магазина: " + Enum.GetName(typeof(TypeDepartment), products.Last().Index));
 
             Box box = new();
             box.Height = maxHeight;
@@ -90,15 +93,15 @@ public class InteractivePanelStore
 
             boxes.Add(box);
 
+            Console.WriteLine("{0,-10} {1,-10} {2,-10} {3,-10} {4,-10}",
+                    "Продукт:", "Висота:", "Ширина:", "Довжина:", "Площа:");
             //Methods Сontents products Big Box 
             foreach (Product product in products)
             {
-                Console.WriteLine(" Name: " + product.Name +
-                    " Height: " + product.Height +
-                    " Width: " + product.Width +
-                    " Length: " + product.Length +
-                    " Area: " + product.Area);
+                Console.WriteLine("{0,-10} {1,-10} {2,-10} {3,-10} {4,-10}", 
+                    product.Name, product.Height, product.Width, product.Length, product.Area);
             }
+            Console.WriteLine();
 
             products.Clear();
         }
@@ -117,10 +120,10 @@ public class InteractivePanelStore
             maxHeight += box.Height;
         }
 
-        Console.WriteLine(" Big Box: " +
-            " Height: " + maxHeight +
-            " Width: " + boxes.Last().Width +
-            " Length: " + boxes.Last().Length +
-            " NameStore: " + nameStore);
+        Console.WriteLine("Коробка з продуктами магазина:" +
+            "\nВисота: " + maxHeight +
+            "\tШирина: " + boxes.Last().Width +
+            "\tДовжина: " + boxes.Last().Length +
+            "\tНазва магазина: " + nameStore);
     }
 }
