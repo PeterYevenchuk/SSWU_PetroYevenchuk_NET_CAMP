@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Home_Task_1_3;
-
+// Не враховано, що є подібність в обчисленні  в 3 випадках
 internal class CubeMatrix
 {
     public int[,,] CreateCube(int size)
