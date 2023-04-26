@@ -1,7 +1,7 @@
 ﻿using System.Drawing;
 
 namespace Home_Task_5_1;
-
+// Petro	Yevenchuk			90	10	10	97	95	95	75	100,4. Вітаю Вас у 2 турі.
 public class Program
 {
     static void Main(string[] args)

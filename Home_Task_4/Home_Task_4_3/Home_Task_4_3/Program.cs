@@ -1,7 +1,7 @@
 ﻿namespace Home_Task_4_3;
 
 class Program
-{
+{// тут все добре
     static void Main(string[] args)
     {
         string fileName = "data.txt";

@@ -2,7 +2,7 @@
 using System;
 
 namespace Home_Task_5_2;
-
+// не враховано ієрархічну структуру, а також не враховано формат даних, який запропоновано в умові задачі.
 public class Department
 {
     private const string FILE_EXTANSION = ".txt";

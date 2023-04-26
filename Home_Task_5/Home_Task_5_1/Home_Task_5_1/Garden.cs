@@ -3,7 +3,7 @@
 namespace Home_Task_5_1;
 
 public class Garden
-{
+{//молодець!
     private List<Point> points;
 
     public Garden(List<Point> points)

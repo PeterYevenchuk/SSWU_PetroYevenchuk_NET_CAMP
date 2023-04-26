@@ -4,7 +4,7 @@ using System.Text;
 public class Program
 {
     static void Main(string[] args)
-    {
+    {//текст відразумав бути колекцією стрічок, яку не можна зливати в одну.
         Console.OutputEncoding = Encoding.UTF8; // important for the proper functioning of the Ukrainian language
 
         Console.WriteLine("Write your text!");

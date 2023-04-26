@@ -6,7 +6,7 @@ namespace Home_Task_4_2;
 public class FoundEmails
 {
     public void Email(string text)
-    {
+    {// пропусків може бути і кілька між словами.
         string[] words = text.Split(' ');
         List<string> invalidEmails = new List<string>();
 
@@ -26,7 +26,7 @@ public class FoundEmails
             }
         }
     }
-
+// Ці регулярні вирази не повністю враховують наше визначення.
     public MatchCollection GetValidEmails(string text)
     {
         string emailPattern = @"\b[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}\b";
@@ -34,7 +34,7 @@ public class FoundEmails
     }
 
     public MatchCollection GetInvalidEmails(string text)
-    {
+    {// 
         string invalidEmailPattern = @"\b[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}\b";
         return Regex.Matches(text, invalidEmailPattern);
     }
