@@ -29,45 +29,55 @@ public class DiagonalMatrix : IEnumerable<int>
 
         while (o < size - 1)
         {
-            while (y > 0 && x < size - 1)
-            {
-                y--;
-                x++;
-                AddIndexInMatrix();
-            }
-            if (y == 0 && x < size - 1)
-            {
-                x++;
-                AddIndexInMatrix();
-            }
-            else
-            {
-                y++;
-                AddIndexInMatrix();
-            }
+            FillMatrixDiagonaleDown();
 
-            while (x > 0 && y < size - 1)
-            {
-                y++;
-                x--;
-                AddIndexInMatrix();
-            }
-            if (x == 0 && y < size - 1)
-            {
-                y++;
-                AddIndexInMatrix();
-            }
-            else if (x == 0 && y == size - 1)
-            {
-                x++;
-                AddIndexInMatrix();
-            }
-            else
-            {
-                x++;
-                AddIndexInMatrix();
-            }
+            FillMatrixDiagonaleUp();
             o++;
+        }
+    }
+
+    public void FillMatrixDiagonaleDown()
+    {
+        while (y > 0 && x < size - 1)
+        {
+            y--;
+            x++;
+            AddIndexInMatrix();
+        }
+        if (y == 0 && x < size - 1)
+        {
+            x++;
+            AddIndexInMatrix();
+        }
+        else
+        {
+            y++;
+            AddIndexInMatrix();
+        }
+    }
+
+    public void FillMatrixDiagonaleUp()
+    {
+        while (x > 0 && y < size - 1)
+        {
+            y++;
+            x--;
+            AddIndexInMatrix();
+        }
+        if (x == 0 && y < size - 1)
+        {
+            y++;
+            AddIndexInMatrix();
+        }
+        else if (x == 0 && y == size - 1)
+        {
+            x++;
+            AddIndexInMatrix();
+        }
+        else
+        {
+            x++;
+            AddIndexInMatrix();
         }
     }
 
