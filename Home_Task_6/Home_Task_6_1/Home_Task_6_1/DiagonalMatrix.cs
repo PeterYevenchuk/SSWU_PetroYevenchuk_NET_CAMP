@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Home_Task_6_1;
-
+// Не правильно зрозуміли умову задачі. Треба для довільної квадратної матриці мати змогу за заданим законом обходити елементи.
 public class DiagonalMatrix : IEnumerable<int>
 {
 
