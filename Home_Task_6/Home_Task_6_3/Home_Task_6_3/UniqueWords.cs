@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Home_Task_6_3;
-
+//сумарний бал -95.
 public class UniqueWords
-{
+{// Тут ефективно, а в попередньому випадку треба для генерації використати таку ж ідею. Генерувати в циклі, а не поза циклом.
     public IEnumerable<string> GetUniqueWords(string text)
     {
         char[] chars = { ' ', ',', '.', '!', '?', ':', ';', '-', '\n', '\r' };
