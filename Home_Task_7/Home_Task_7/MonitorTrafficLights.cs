@@ -1,8 +1,10 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Home_Task_7;
 
-public delegate void GreenAndRedTrafficLights(int time);
+public delegate Task GreenAndRedTrafficLights(int time);
 
 public class MonitorTrafficLights
 {
@@ -15,7 +17,7 @@ public class MonitorTrafficLights
 
     public event GreenAndRedTrafficLights OnSwipeColorEvent;
 
-    public async void StartShowGreen(int time)
+    public async Task StartShow(int time)
     {
         bool result = false;
         int timeResult = time * 1000;
@@ -41,8 +43,7 @@ public class MonitorTrafficLights
                 result = false;
                 _strategyTrafficLights.ConsoleWriterColor(TypeTrafficLightState.Green.ToString(),  
                     TypeTrafficLightState.Red.ToString());
-                await Task.Delay(delayTimeLittle);
-
+                await Task.Delay(delayTime);
                 _strategyTrafficLights.ConsoleWriterYellow(TypeTrafficLightState.Yellow.ToString());
                 await Task.Delay(delayTimeLittle);
             }
@@ -52,18 +53,22 @@ public class MonitorTrafficLights
                 shouldStop = true;
             }
         }
-        Stop();
+        UnsubscribeTrafficLights();
     }
 
-    public void Start(int time)
+    public void SubscriptionTrafficLights()
     {
-        OnSwipeColorEvent += StartShowGreen;
-        OnSwipeColorEvent(time);
+        OnSwipeColorEvent += StartShow;
     }
 
-    public void Stop()
+    public async Task Start(int time)
     {
-        OnSwipeColorEvent -= StartShowGreen;
+        await OnSwipeColorEvent?.Invoke(time);
+    }
+
+    public void UnsubscribeTrafficLights()
+    {
+        OnSwipeColorEvent -= StartShow;
     }
 
     private void DirectionWriter()

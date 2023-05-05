@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "obgrToYjHgvUYwrtUrQLyNJ9y4U77RXI8pvHUvNTIj3pTCv26qMm0SUjGjTmlz9ONVi1LfKtl6WZOzyhzG8Ahw==",
+  "dgSpecHash": "R87TwgtJK5FJPmVcMxUrVk8Y14pGA3msUyJESOovQkmLmz7o7uUqQQg1ImLUVnFS528EkEojVtdhNsN3x9CLfA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\petro\\OneDrive\\Документы\\GitHub\\SSWU_PetroYevenchuk_NET_CAMP\\Home_Task_7\\Home_Task_7\\Home_Task_7.csproj",
+  "projectFilePath": "D:\\MyCodeC#.NET\\Git\\SSWU_PetroYevenchuk_NET_CAMP\\Home_Task_7\\Home_Task_7\\Home_Task_7.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\petro\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\petro\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
