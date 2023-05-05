@@ -1,0 +1,15 @@
+C:\Users\petro\OneDrive\Документы\GitHub\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_7\Home_Task_7\bin\Debug\net7.0\Home_Task_7.exe
+C:\Users\petro\OneDrive\Документы\GitHub\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_7\Home_Task_7\bin\Debug\net7.0\Home_Task_7.deps.json
+C:\Users\petro\OneDrive\Документы\GitHub\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_7\Home_Task_7\bin\Debug\net7.0\Home_Task_7.runtimeconfig.json
+C:\Users\petro\OneDrive\Документы\GitHub\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_7\Home_Task_7\bin\Debug\net7.0\Home_Task_7.dll
+C:\Users\petro\OneDrive\Документы\GitHub\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_7\Home_Task_7\bin\Debug\net7.0\Home_Task_7.pdb
+C:\Users\petro\OneDrive\Документы\GitHub\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_7\Home_Task_7\obj\Debug\net7.0\Home_Task_7.csproj.AssemblyReference.cache
+C:\Users\petro\OneDrive\Документы\GitHub\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_7\Home_Task_7\obj\Debug\net7.0\Home_Task_7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\petro\OneDrive\Документы\GitHub\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_7\Home_Task_7\obj\Debug\net7.0\Home_Task_7.AssemblyInfoInputs.cache
+C:\Users\petro\OneDrive\Документы\GitHub\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_7\Home_Task_7\obj\Debug\net7.0\Home_Task_7.AssemblyInfo.cs
+C:\Users\petro\OneDrive\Документы\GitHub\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_7\Home_Task_7\obj\Debug\net7.0\Home_Task_7.csproj.CoreCompileInputs.cache
+C:\Users\petro\OneDrive\Документы\GitHub\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_7\Home_Task_7\obj\Debug\net7.0\Home_Task_7.dll
+C:\Users\petro\OneDrive\Документы\GitHub\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_7\Home_Task_7\obj\Debug\net7.0\refint\Home_Task_7.dll
+C:\Users\petro\OneDrive\Документы\GitHub\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_7\Home_Task_7\obj\Debug\net7.0\Home_Task_7.pdb
+C:\Users\petro\OneDrive\Документы\GitHub\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_7\Home_Task_7\obj\Debug\net7.0\Home_Task_7.genruntimeconfig.cache
+C:\Users\petro\OneDrive\Документы\GitHub\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_7\Home_Task_7\obj\Debug\net7.0\ref\Home_Task_7.dll
