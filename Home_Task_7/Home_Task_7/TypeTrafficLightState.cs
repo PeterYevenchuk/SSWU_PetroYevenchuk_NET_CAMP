@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Home_Task_7;
 
-enum TypeTrafficLightState
+public enum TypeTrafficLightState
 {
     Green,
     Yellow,

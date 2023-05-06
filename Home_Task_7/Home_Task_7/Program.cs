@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Home_Task_7;
@@ -8,12 +7,14 @@ public class Program
 {
     static async Task Main(string[] args)
     {
-        MonitorTrafficLights monitorTrafficLights = new MonitorTrafficLights(new StrategyTrafficLightsFirst());
+        SimulatorTrafficLights simulatorTrafficLights = new SimulatorTrafficLights(new StrategyTrafficLightsFirst());
 
         Console.WriteLine("Enter the time for the traffic light to change color: ");
         int time = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Select the road number on which the traffic light will be green (East-West West-East = 1, " +
+            "North-South South-North = 2): ");
+        int roadTrafficLight = Convert.ToInt32(Console.ReadLine());
 
-        monitorTrafficLights.SubscriptionTrafficLights();
-        await monitorTrafficLights.Start(time);
+        await simulatorTrafficLights.StartShow(time, roadTrafficLight);
     }
 }

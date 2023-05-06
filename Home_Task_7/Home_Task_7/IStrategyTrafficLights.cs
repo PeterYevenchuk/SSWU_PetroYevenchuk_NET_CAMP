@@ -8,6 +8,5 @@ namespace Home_Task_7;
 
 public interface IStrategyTrafficLights
 {
-    public void ConsoleWriterColor(string color1, string color2);
-    public void ConsoleWriterYellow(string color);
+    public void ConsoleWriterColor(string color);
 }
