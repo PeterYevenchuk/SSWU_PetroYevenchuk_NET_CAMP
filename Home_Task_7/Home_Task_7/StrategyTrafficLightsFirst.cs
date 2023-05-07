@@ -10,7 +10,7 @@ namespace Home_Task_7;
 
 public sealed class StrategyTrafficLightsFirst : IStrategyTrafficLights
 {
-    private string CheckerColor(string color)
+    private string CheckerColor(string color) //Цей метод я використовую для свайпання кольорів
     {
         return color switch
         {

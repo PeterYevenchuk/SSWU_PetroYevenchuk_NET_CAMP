@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Home_Task_7;
 
-public class TrafficLights
+public class TrafficLights //Даний клас я використовую для роботи з івентом (івент знаходиться в класі SimulatorTrafficLights)
 {
     private string _сolorTrafficLight;
 

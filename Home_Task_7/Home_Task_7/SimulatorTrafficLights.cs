@@ -9,7 +9,7 @@ namespace Home_Task_7;
 
 public class SimulatorTrafficLights
 {
-    public event Action<string> OnSwipeColorEvent;
+    public event Action<string> OnSwipeColorEvent; //Ось мій івент з іменованим делегатом
 
     private TrafficLights _trafficLights;
 
@@ -18,10 +18,10 @@ public class SimulatorTrafficLights
     public SimulatorTrafficLights(IStrategyTrafficLights strategyTrafficLights)
     {
         _strategyTrafficLights = strategyTrafficLights;
-        _trafficLights = new(TypeTrafficLightState.Red.ToString(), this);
+        _trafficLights = new(TypeTrafficLightState.Red.ToString(), this); //Значення кольора по замовчуванню
     }
 
-    public async Task StartShow(int time, int roadTrafficLightNumber)
+    public async Task StartShow(int time, int roadTrafficLightNumber) //В даному методі відбувається вся логіка
     {
         int timeResult = time * 1000;
         int delayTime = Convert.ToInt32(timeResult * 0.7);
@@ -56,6 +56,7 @@ public class SimulatorTrafficLights
 
             if (Console.KeyAvailable && Console.ReadKey(true).Key == ConsoleKey.Enter)
             {
+                //При натискані кнопки ентер програма завершить роботу
                 shouldStop = true;
             }
         }
@@ -63,7 +64,7 @@ public class SimulatorTrafficLights
         _trafficLights.UnsubscribeTrafficLights();
     }
 
-    private void SetColorTrafficLights(string color)
+    private void SetColorTrafficLights(string color) //Тут я встановлюю кольор в івент
     {
         OnSwipeColorEvent.Invoke(color);
         _strategyTrafficLights.ConsoleWriterColor(_trafficLights.GetColor());

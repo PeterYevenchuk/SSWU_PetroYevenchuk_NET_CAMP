@@ -5,6 +5,12 @@ namespace Home_Task_7;
 
 public class Program
 {
+    //В своїй програмі я використав патерн стратегію для подальшого розширення програми в майбутньому,
+    //а також за допомогою івента я свайпаю кольори світловори. Для регулювання часу роботи кольорів
+    //світлофора я заюзав асинхронне програмування.
+    
+    //І добавлю те що при першому запуску програми користувач сам вибирає час і на якому напрямку дороги буде зелене світло, а на якому червоне
+
     static async Task Main(string[] args)
     {
         SimulatorTrafficLights simulatorTrafficLights = new SimulatorTrafficLights(new StrategyTrafficLightsFirst());
