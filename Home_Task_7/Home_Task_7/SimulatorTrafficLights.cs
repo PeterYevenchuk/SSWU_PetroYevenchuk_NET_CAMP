@@ -12,7 +12,7 @@ public class SimulatorTrafficLights
     public event Action<string> OnSwipeColorEvent; //Ось мій івент з іменованим делегатом
 
     private TrafficLights _trafficLights;
-
+// Стратегія тут доречна.
     private readonly IStrategyTrafficLights _strategyTrafficLights;
 
     public SimulatorTrafficLights(IStrategyTrafficLights strategyTrafficLights)
@@ -65,7 +65,7 @@ public class SimulatorTrafficLights
     }
 
     private void SetColorTrafficLights(string color) //Тут я встановлюю кольор в івент
-    {
+    {// Ваш симулятор залежний від консольного відображення. Логіка керування і відображення і керування роботою злита в один клас.
         OnSwipeColorEvent.Invoke(color);
         _strategyTrafficLights.ConsoleWriterColor(_trafficLights.GetColor());
     }
