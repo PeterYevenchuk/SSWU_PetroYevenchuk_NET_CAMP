@@ -44,10 +44,12 @@ public class StateCrossroad
 
     public async Task Start()
     {
-        foreach (var item in _baseCrossroads)
+        Task[] tasks = new Task[_baseCrossroads.Count];
+        for (int i = 0; i < _baseCrossroads.Count; i++)
         {
-            await item.StartShow();
+            tasks[i] = _baseCrossroads[i].StartShow();
         }
+        await Task.WhenAll(tasks);
     }
 
     private int GetTimeCrossroad()

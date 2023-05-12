@@ -13,7 +13,7 @@ public class Program
 
         ControlerCrossroad controlerTrafficLights = new();
 
-        Console.WriteLine("In order to change the time of operation of the traffic light, press T," +
+        Console.WriteLine("In order to change the time of operation of the traffic light, press T or U," +
             " and in order to exit, press Enter.");
 
         await controlerTrafficLights.CreateCrossroad(2);

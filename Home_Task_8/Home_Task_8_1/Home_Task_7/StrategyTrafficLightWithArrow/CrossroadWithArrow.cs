@@ -73,7 +73,7 @@ public class CrossroadWithArrow : BaseCrossroad
                 _shouldStop = true;
                 _trafficLights.UnsubscribeTrafficLights();
             }
-            else if (key == ConsoleKey.T)
+            else if (key == ConsoleKey.U)
             {
                 Console.WriteLine("Enter the new traffic light operating time in seconds: ");
                 var newTimeInput = Console.ReadLine();
