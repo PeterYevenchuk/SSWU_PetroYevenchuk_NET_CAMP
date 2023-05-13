@@ -1,0 +1,15 @@
+D:\MyCodeC#.NET\Git\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_8\Home_Task_8_4\Home_Task_8_4\bin\Debug\net7.0\Home_Task_8_4.exe
+D:\MyCodeC#.NET\Git\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_8\Home_Task_8_4\Home_Task_8_4\bin\Debug\net7.0\Home_Task_8_4.deps.json
+D:\MyCodeC#.NET\Git\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_8\Home_Task_8_4\Home_Task_8_4\bin\Debug\net7.0\Home_Task_8_4.runtimeconfig.json
+D:\MyCodeC#.NET\Git\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_8\Home_Task_8_4\Home_Task_8_4\bin\Debug\net7.0\Home_Task_8_4.dll
+D:\MyCodeC#.NET\Git\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_8\Home_Task_8_4\Home_Task_8_4\bin\Debug\net7.0\Home_Task_8_4.pdb
+D:\MyCodeC#.NET\Git\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_8\Home_Task_8_4\Home_Task_8_4\obj\Debug\net7.0\Home_Task_8_4.csproj.AssemblyReference.cache
+D:\MyCodeC#.NET\Git\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_8\Home_Task_8_4\Home_Task_8_4\obj\Debug\net7.0\Home_Task_8_4.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyCodeC#.NET\Git\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_8\Home_Task_8_4\Home_Task_8_4\obj\Debug\net7.0\Home_Task_8_4.AssemblyInfoInputs.cache
+D:\MyCodeC#.NET\Git\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_8\Home_Task_8_4\Home_Task_8_4\obj\Debug\net7.0\Home_Task_8_4.AssemblyInfo.cs
+D:\MyCodeC#.NET\Git\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_8\Home_Task_8_4\Home_Task_8_4\obj\Debug\net7.0\Home_Task_8_4.csproj.CoreCompileInputs.cache
+D:\MyCodeC#.NET\Git\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_8\Home_Task_8_4\Home_Task_8_4\obj\Debug\net7.0\Home_Task_8_4.dll
+D:\MyCodeC#.NET\Git\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_8\Home_Task_8_4\Home_Task_8_4\obj\Debug\net7.0\refint\Home_Task_8_4.dll
+D:\MyCodeC#.NET\Git\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_8\Home_Task_8_4\Home_Task_8_4\obj\Debug\net7.0\Home_Task_8_4.pdb
+D:\MyCodeC#.NET\Git\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_8\Home_Task_8_4\Home_Task_8_4\obj\Debug\net7.0\Home_Task_8_4.genruntimeconfig.cache
+D:\MyCodeC#.NET\Git\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_8\Home_Task_8_4\Home_Task_8_4\obj\Debug\net7.0\ref\Home_Task_8_4.dll
