@@ -55,7 +55,7 @@ public class CrossroadWithArrow : BaseCrossroad
                 await ColorTimer(_delayTimeLittle, TypeTrafficLightState.Yellow, _arrowState, TypeTrafficLightState.Yellow);
                 _color = TypeTrafficLightState.Red;
                 if (_arrowColor.ToString() == TypeTrafficLightState.Red.ToString()) _arrowColor = TypeTrafficLightState.Green;
-                else _arrowColor = TypeTrafficLightState.Red; ;
+                else _arrowColor = TypeTrafficLightState.Red;
             }
             await ProcessConsoleCommands();
         }

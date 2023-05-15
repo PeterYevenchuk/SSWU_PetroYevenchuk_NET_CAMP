@@ -68,11 +68,11 @@ public class StateCrossroad
         switch (numStrategy)
         {
             case 1:
-                var baseCrossroad = new Crossroad(numberCrossroad, numberLine, _controlerTrafficLights, RandomColortrafficLight());
+                var baseCrossroad = new Crossroad(numberCrossroad, numberLine, _controlerTrafficLights, TypeTrafficLightState.Green);
                 AddCrossroad(baseCrossroad);
                 break;
             case 2:
-                var baseCrossroadArrow = new CrossroadWithArrow(numberCrossroad, numberLine, _controlerTrafficLights, RandomColortrafficLight(), RandomLeftOrRight(), RandomColortrafficLight());
+                var baseCrossroadArrow = new CrossroadWithArrow(numberCrossroad, numberLine, _controlerTrafficLights, TypeTrafficLightState.Red, "Right", TypeTrafficLightState.Red);
                 AddCrossroad(baseCrossroadArrow);
                 break;
         }
@@ -86,21 +86,4 @@ public class StateCrossroad
         return numStrategy;
     }
 
-    private TypeTrafficLightState RandomColortrafficLight()
-    {
-
-        TypeTrafficLightState[] values = (TypeTrafficLightState[])Enum.GetValues(typeof(TypeTrafficLightState));
-        Random random = new Random();
-        int randomIndex = random.Next(1, 3);
-        return values[randomIndex];
-    }
-
-    private string RandomLeftOrRight()
-    {
-        Random random = new Random();
-        int randomIndex = random.Next(0, 2);
-        if (randomIndex == 1) return "Right";
-        if (randomIndex == 2) return "Left";
-        return "Left";
-    }
 }
