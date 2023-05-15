@@ -59,7 +59,7 @@ public class StateCrossroad
     private int GetTimeCrossroad()
     {
         Console.WriteLine("Enter the time for the traffic light to change color: ");
-        int time = Convert.ToInt32(Console.ReadLine() ?? "10");
+        int time = int.TryParse(Console.ReadLine(), out int result) ? result : 10; Console.WriteLine("Set defolt: 10");
         return time;
     }
 
@@ -82,7 +82,7 @@ public class StateCrossroad
     {
         Console.WriteLine($"Lines {item}");
         Console.WriteLine("Choose a Traffic Light: 1 - Traffic Light, 2 - Traffic Light With Arrow ");
-        int numStrategy = Convert.ToInt16(Console.ReadLine() ?? "1");
+        int numStrategy = int.TryParse(Console.ReadLine(), out int result) ? result : 1; Console.WriteLine("Set defolt: 1");
         return numStrategy;
     }
 

@@ -18,9 +18,9 @@ public class Program
             " and in order to exit, press Enter.");
 
         Console.Write("Enter the number of crossroads: ");
-        int countCrossroad = Convert.ToInt32(Console.ReadLine() ?? "1");
+        int countCrossroad = int.TryParse(Console.ReadLine(), out int resultCrossroad) ? resultCrossroad : 1; Console.WriteLine("Set defolt: 1");
         Console.WriteLine("Enter the number of lines in one full crossroad: ");
-        int countLine = Convert.ToInt32(Console.ReadLine() ?? "4");
+        int countLine = int.TryParse(Console.ReadLine(), out int resultLine) ? resultLine : 4; Console.WriteLine("Set defolt: 4");
         Console.WriteLine();
 
         await controlerTrafficLights.CreateCrossroad(countCrossroad, countLine);
