@@ -10,19 +10,28 @@ namespace Home_Task_8;
 
 public abstract class BaseCrossroad
 {
-    public int Number { get; set; }
+    public int NumberCrossroad { get; set; }
+    public int NumberLine {get; set; }
     public int WorkTime { get; set; }
 
     public abstract Task StartShow();
 
-    protected BaseCrossroad(int number)
+    public abstract Task ProcessConsoleCommands();
+
+    protected BaseCrossroad(int numberCrossroad, int numberLine)
     {
-        Number = number;
+        NumberCrossroad = numberCrossroad;
+        NumberLine = numberLine;
     }
 
     public async Task DebugeCrossroad()
     {
-        Console.WriteLine($"Number crossroad = {Number}");
+        Console.WriteLine($"Number crossroad = {NumberCrossroad}");
+    }
+
+    public async Task DebugeLine()
+    {
+        Console.WriteLine($"Number line = {NumberLine}");
     }
 
     public async Task InitTime(int time)

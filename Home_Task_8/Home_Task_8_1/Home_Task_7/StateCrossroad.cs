@@ -24,51 +24,55 @@ public class StateCrossroad
         _baseCrossroads.Add(baseCrossroad);
     }
 
-    public async Task Initialize(int count)
+    public async Task Initialize(int count, int lines)
     {
         for (int i = 1; i < count + 1; i++)
         {
-            await SetStrategy(GetNumStrategy(i), i);
+            Console.WriteLine($"Crossroad {i}");
+            for (int j = 1; j < lines + 1; j++)
+            {
+                await SetStrategy(GetNumStrategy(j), i, j);
+            }
         }
-    
     }
 
     public async Task SetTimeCrossroads()
     {
+        
         foreach (var item in _baseCrossroads)
         {
             await item.DebugeCrossroad();
+            await item.DebugeLine();
             await item.InitTime(GetTimeCrossroad());
         }
     }
 
     public async Task Start()
     {
-        Task[] tasks = new Task[_baseCrossroads.Count];
-        for (int i = 0; i < _baseCrossroads.Count; i++)
-        {
-            tasks[i] = _baseCrossroads[i].StartShow();
-        }
-        await Task.WhenAll(tasks);
+        List<Task> showTasks = _baseCrossroads.Select(crossroad => crossroad.StartShow()).ToList();
+        await Task.WhenAll(showTasks);
+
+        List<Task> commandTasks = _baseCrossroads.Select(crossroad => crossroad.ProcessConsoleCommands()).ToList();
+        await Task.WhenAll(commandTasks);
     }
 
     private int GetTimeCrossroad()
     {
         Console.WriteLine("Enter the time for the traffic light to change color: ");
-        int numStrategy = Convert.ToInt32(Console.ReadLine());
-        return numStrategy;
+        int time = Convert.ToInt32(Console.ReadLine() ?? "10");
+        return time;
     }
 
-    private async Task SetStrategy(int numStrategy, int item)
+    private async Task SetStrategy(int numStrategy, int numberCrossroad, int numberLine)
     {
         switch (numStrategy)
         {
             case 1:
-                var baseCrossroad = new Crossroad(item, _controlerTrafficLights, RandomColortrafficLight());
+                var baseCrossroad = new Crossroad(numberCrossroad, numberLine, _controlerTrafficLights, RandomColortrafficLight());
                 AddCrossroad(baseCrossroad);
                 break;
             case 2:
-                var baseCrossroadArrow = new CrossroadWithArrow(item, _controlerTrafficLights, RandomColortrafficLight(), RandomLeftOrRight(), RandomColortrafficLight());
+                var baseCrossroadArrow = new CrossroadWithArrow(numberCrossroad, numberLine, _controlerTrafficLights, RandomColortrafficLight(), RandomLeftOrRight(), RandomColortrafficLight());
                 AddCrossroad(baseCrossroadArrow);
                 break;
         }
@@ -76,9 +80,9 @@ public class StateCrossroad
 
     private int GetNumStrategy(int item)
     {
-        Console.WriteLine($"Crossroad {item}");
-        Console.WriteLine("Choose a strategy: 1 - StrategyCrossroadByDefault, 2 - StrategyCrossroadWithArrow ");
-        int numStrategy = Convert.ToInt16(Console.ReadLine());
+        Console.WriteLine($"Lines {item}");
+        Console.WriteLine("Choose a Traffic Light: 1 - Traffic Light, 2 - Traffic Light With Arrow ");
+        int numStrategy = Convert.ToInt16(Console.ReadLine() ?? "1");
         return numStrategy;
     }
 

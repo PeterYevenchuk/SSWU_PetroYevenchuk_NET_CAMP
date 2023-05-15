@@ -22,7 +22,7 @@ public class CrossroadWithArrow : BaseCrossroad
     private int _delayTime;
     private int _delayTimeLittle;
 
-    public CrossroadWithArrow(int number, ControlerCrossroad controlerTrafficLights, TypeTrafficLightState color, string arrowState, TypeTrafficLightState arrowColor) : base(number)
+    public CrossroadWithArrow(int numberCrossroad, int numberLine, ControlerCrossroad controlerTrafficLights, TypeTrafficLightState color, string arrowState, TypeTrafficLightState arrowColor) : base(numberCrossroad, numberLine)
     {
         _controlerTrafficLights = controlerTrafficLights;
         _trafficLights = new TrafficLights(TypeTrafficLightState.Red.ToString(), _controlerTrafficLights);
@@ -41,7 +41,6 @@ public class CrossroadWithArrow : BaseCrossroad
 
         while (!_shouldStop)
         {
-
             if (_color.ToString() == TypeTrafficLightState.Red.ToString())
             {
                 await ColorTimer(_delayTime, TypeTrafficLightState.Red, _arrowState, _arrowColor);
@@ -58,11 +57,11 @@ public class CrossroadWithArrow : BaseCrossroad
                 if (_arrowColor.ToString() == TypeTrafficLightState.Red.ToString()) _arrowColor = TypeTrafficLightState.Green;
                 else _arrowColor = TypeTrafficLightState.Red; ;
             }
-            ProcessConsoleCommands();
+            await ProcessConsoleCommands();
         }
     }
 
-    public void ProcessConsoleCommands()
+    public override async Task ProcessConsoleCommands()
     {
         if (Console.KeyAvailable)
         {
@@ -76,7 +75,7 @@ public class CrossroadWithArrow : BaseCrossroad
             else if (key == ConsoleKey.U)
             {
                 Console.WriteLine("Enter the new traffic light operating time in seconds: ");
-                var newTimeInput = Console.ReadLine();
+                var newTimeInput = Console.ReadLine() ?? $"{WorkTime}";
                 if (int.TryParse(newTimeInput, out int newTime))
                 {
                     newTime = newTime * 1000;
@@ -94,6 +93,7 @@ public class CrossroadWithArrow : BaseCrossroad
     public async Task ColorTimer(int time, TypeTrafficLightState color, string arrowState, TypeTrafficLightState colorArrow)
     {
         await DebugeCrossroad();
+        await DebugeLine();
         arrowState = arrowState.Humanize(LetterCasing.Title).Trim();
         _controlerTrafficLights.SetColorTrafficLights(color.ToString());
         _showInfo.StringDirectionArrow(arrowState);

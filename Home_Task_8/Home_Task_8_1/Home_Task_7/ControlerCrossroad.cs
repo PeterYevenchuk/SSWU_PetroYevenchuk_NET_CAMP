@@ -5,9 +5,6 @@ using System.Reflection.Metadata.Ecma335;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
-using Home_Task_8.StrategyTrafficLight;
-using Home_Task_8.StrategyTrafficLightWithArrow;
-
 namespace Home_Task_8;
 
 public class ControlerCrossroad
@@ -27,9 +24,9 @@ public class ControlerCrossroad
         OnSwipeColorEvent?.Invoke(color);
     }
 
-    public async Task CreateCrossroad(int count)
+    public async Task CreateCrossroad(int countCrossroad, int countLines)
     {
-        await _stateCrossroad.Initialize(count);
+        await _stateCrossroad.Initialize(countCrossroad, countLines);
     }
 
     public async Task SetTime()
@@ -41,5 +38,4 @@ public class ControlerCrossroad
     {
         await _stateCrossroad.Start();
     }
-
 }

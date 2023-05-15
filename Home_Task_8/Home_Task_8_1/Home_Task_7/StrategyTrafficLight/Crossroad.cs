@@ -18,7 +18,7 @@ public class Crossroad : BaseCrossroad
     private int _delayTime;
     private int _delayTimeLittle;
 
-    public Crossroad(int number, ControlerCrossroad controlerTrafficLights, TypeTrafficLightState color) : base(number)
+    public Crossroad(int numberCrossroad, int numberLine, ControlerCrossroad controlerTrafficLights, TypeTrafficLightState color) : base(numberCrossroad, numberLine)
     {
         _controlerTrafficLights = controlerTrafficLights;
         _trafficLights = new TrafficLights(TypeTrafficLightState.Red.ToString(), _controlerTrafficLights);
@@ -48,11 +48,11 @@ public class Crossroad : BaseCrossroad
                 await ColorTimer(_delayTimeLittle, TypeTrafficLightState.Yellow);
                 _color = TypeTrafficLightState.Red;
             }
-            ProcessConsoleCommands();
+            await ProcessConsoleCommands();
         }
     }
 
-    public void ProcessConsoleCommands()
+    public override async Task ProcessConsoleCommands()
     {
         if (Console.KeyAvailable)
         {
@@ -66,7 +66,7 @@ public class Crossroad : BaseCrossroad
             else if (key == ConsoleKey.T)
             {
                 Console.WriteLine("Enter the new traffic light operating time in seconds: ");
-                var newTimeInput = Console.ReadLine();
+                var newTimeInput = Console.ReadLine() ?? $"{WorkTime}";
                 if (int.TryParse(newTimeInput, out int newTime))
                 {
                     newTime = newTime * 1000;
@@ -84,6 +84,7 @@ public class Crossroad : BaseCrossroad
     public async Task ColorTimer(int time, TypeTrafficLightState color)
     {
         await DebugeCrossroad();
+        await DebugeLine();
         _controlerTrafficLights.SetColorTrafficLights(color.ToString());
         _showInfo.StringDirection();
         _showInfo.StringColor();
