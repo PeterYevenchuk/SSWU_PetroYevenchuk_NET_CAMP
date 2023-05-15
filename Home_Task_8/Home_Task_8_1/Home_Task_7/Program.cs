@@ -7,7 +7,6 @@ namespace Home_Task_8;
 
 public class Program
 {
-
     static async Task Main(string[] args)
     {
 
@@ -18,9 +17,9 @@ public class Program
             " and in order to exit, press Enter.");
 
         Console.Write("Enter the number of crossroads: ");
-        int countCrossroad = int.TryParse(Console.ReadLine(), out int resultCrossroad) ? resultCrossroad : 1; Console.WriteLine("Set defolt: 1");
+        int countCrossroad = int.TryParse(Console.ReadLine(), out int resultCrossroad) ? resultCrossroad : 1;
         Console.WriteLine("Enter the number of lines in one full crossroad: ");
-        int countLine = int.TryParse(Console.ReadLine(), out int resultLine) ? resultLine : 4; Console.WriteLine("Set defolt: 4");
+        int countLine = int.TryParse(Console.ReadLine(), out int resultLine) ? resultLine : 4;
         Console.WriteLine();
 
         await controlerTrafficLights.CreateCrossroad(countCrossroad, countLine);
@@ -28,5 +27,4 @@ public class Program
         await controlerTrafficLights.StartShowCrossroad();
         
     }
-
 }

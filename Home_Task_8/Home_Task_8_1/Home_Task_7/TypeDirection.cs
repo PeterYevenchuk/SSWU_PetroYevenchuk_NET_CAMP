@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Home_Task_8;
 
-enum TypeDirection
+public enum TypeDirection
 {
     North,
     South,

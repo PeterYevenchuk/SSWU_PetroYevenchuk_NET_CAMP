@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Home_Task_8.StrategyTrafficLightWithArrow;
 
-public class StrategyCrossroadWithArrow : ICrossroadWithArrow
+public sealed class StrategyCrossroadWithArrow : ICrossroadWithArrow
 {
     private string CheckerColor(string color)
     {
