@@ -1,0 +1,15 @@
+D:\MyCodeC#.NET\Git\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_10\Home_Task_10_1\Home_Task_10_1\obj\Debug\net7.0\Home_Task_10_1.csproj.AssemblyReference.cache
+D:\MyCodeC#.NET\Git\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_10\Home_Task_10_1\Home_Task_10_1\obj\Debug\net7.0\Home_Task_10_1.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyCodeC#.NET\Git\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_10\Home_Task_10_1\Home_Task_10_1\obj\Debug\net7.0\Home_Task_10_1.AssemblyInfoInputs.cache
+D:\MyCodeC#.NET\Git\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_10\Home_Task_10_1\Home_Task_10_1\obj\Debug\net7.0\Home_Task_10_1.AssemblyInfo.cs
+D:\MyCodeC#.NET\Git\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_10\Home_Task_10_1\Home_Task_10_1\obj\Debug\net7.0\Home_Task_10_1.csproj.CoreCompileInputs.cache
+D:\MyCodeC#.NET\Git\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_10\Home_Task_10_1\Home_Task_10_1\bin\Debug\net7.0\Home_Task_10_1.exe
+D:\MyCodeC#.NET\Git\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_10\Home_Task_10_1\Home_Task_10_1\bin\Debug\net7.0\Home_Task_10_1.deps.json
+D:\MyCodeC#.NET\Git\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_10\Home_Task_10_1\Home_Task_10_1\bin\Debug\net7.0\Home_Task_10_1.runtimeconfig.json
+D:\MyCodeC#.NET\Git\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_10\Home_Task_10_1\Home_Task_10_1\bin\Debug\net7.0\Home_Task_10_1.dll
+D:\MyCodeC#.NET\Git\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_10\Home_Task_10_1\Home_Task_10_1\bin\Debug\net7.0\Home_Task_10_1.pdb
+D:\MyCodeC#.NET\Git\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_10\Home_Task_10_1\Home_Task_10_1\obj\Debug\net7.0\Home_Task_10_1.dll
+D:\MyCodeC#.NET\Git\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_10\Home_Task_10_1\Home_Task_10_1\obj\Debug\net7.0\refint\Home_Task_10_1.dll
+D:\MyCodeC#.NET\Git\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_10\Home_Task_10_1\Home_Task_10_1\obj\Debug\net7.0\Home_Task_10_1.pdb
+D:\MyCodeC#.NET\Git\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_10\Home_Task_10_1\Home_Task_10_1\obj\Debug\net7.0\Home_Task_10_1.genruntimeconfig.cache
+D:\MyCodeC#.NET\Git\SSWU_PetroYevenchuk_NET_CAMP\Home_Task_10\Home_Task_10_1\Home_Task_10_1\obj\Debug\net7.0\ref\Home_Task_10_1.dll
