@@ -5,7 +5,7 @@ public class Program
     static void Main()
     {
         // sorting rows by length
-        string[] strings = { "apple", "banana", "cherry", "date", "elderberry" };
+        string[] strings = { "apple", "banana", "cherry", "strawbery", "elderberry" };
         Comparison<string> stringComparison = (x, y) => x.Length.CompareTo(y.Length);
         QuickSort<string>.Sort(strings, stringComparison, 1); // Selecting the first element
         Console.WriteLine("Sort rows by length:");
@@ -27,7 +27,7 @@ public class Program
         Console.WriteLine();
 
         // sorting double in ascending order
-        double[] doubles = { 12.3, 5.8, 3.1, 9.85, 1.0, 7.8, 12.4, 28.3 };
+        double[] doubles = { 12.3, 5.8, 3.1, 9.85, 1.08, 7.8, 12.4, 28.3 };
         Comparison<double> doublecomparison = (x, y) => x.CompareTo(y);
         QuickSort<double>.Sort(doubles, doublecomparison, 3); // Median selection
         Console.WriteLine("Sorting double in ascending order:");

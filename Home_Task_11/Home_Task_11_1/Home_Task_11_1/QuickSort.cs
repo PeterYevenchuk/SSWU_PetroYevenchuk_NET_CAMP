@@ -6,10 +6,10 @@ public class QuickSort<T>
 
     public static void Sort(T[] array, Comparison<T> comparison, int pivotChoice)
     {
-        Sort(array, 0, array.Length - 1, comparison, pivotChoice);
+        CustomSort(array, 0, array.Length - 1, comparison, pivotChoice);
     }
 
-    private static void Sort(T[] array, int left, int right, Comparison<T> comparison, int pivotChoice)
+    private static void CustomSort(T[] array, int left, int right, Comparison<T> comparison, int pivotChoice)
     {
         if (left < right)
         {
@@ -46,8 +46,8 @@ public class QuickSort<T>
 
             Swap(array, storeIndex, right);
 
-            Sort(array, left, storeIndex - 1, comparison, pivotChoice);
-            Sort(array, storeIndex + 1, right, comparison, pivotChoice);
+            CustomSort(array, left, storeIndex - 1, comparison, pivotChoice);
+            CustomSort(array, storeIndex + 1, right, comparison, pivotChoice);
         }
     }
 
