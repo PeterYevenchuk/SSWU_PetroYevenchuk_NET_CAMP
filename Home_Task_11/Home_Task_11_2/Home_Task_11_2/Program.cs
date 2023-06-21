@@ -7,11 +7,21 @@ class Program
     static void Main()
     {
         string inputFile = "input.txt";
-        int partitionSize = 50; // Кількість символів, яку можна обробити за раз
+        string sortedFile = "sorted.txt";
+        int blockSize = 25;
 
-        DataProcessor processor = new DataProcessor();
-        processor.ProcessData(inputFile, partitionSize);
+        MergeSorter sorter = new MergeSorter();
+        BlockSorter blockSorter = new BlockSorter();
 
-        Console.WriteLine("Sorting complete.");
+        // Splitting the input file into blocks and sorting each block
+        blockSorter.SortBlocks(inputFile, blockSize);
+
+        // Merge sorted blocks into one output file
+        sorter.MergeSortedBlocks(inputFile, sortedFile, blockSize);
+
+        // Issue of temporary files
+        sorter.DeleteTemporaryFiles();
+
+        Console.WriteLine("Sorting completed. Result saved in the sorted file.");
     }
 }
